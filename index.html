@@ -1,13 +1,147 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobilhandel - Din pålitelige partner for kjøp av kvalitetsmobiler</title>
+    <meta name="description" content="Mobilhandel tilbyr et stort utvalg av kvalitetssikrede brukte mobiltelefoner. Vi er din trygge partner for kjøp av mobiler på Finn.no">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="#" class="logo-link">
+                        <div class="logo-square">m</div>
+                        <span class="logo-text">mobilhandel</span>
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#intro">Om Oss</a></li>
+                    <li><a href="#anmeldelser">Anmeldelser</a></li>
+                    <li><a href="#om-oss">Hvorfor Oss</a></li>
+                    <li><a href="https://finn.no/user/profile" class="nav-cta" target="_blank">Besøk Butikken</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="spline-container">
+                <iframe src="https://my.spline.design/agencyformdatepickeriphonemockup-ceb3f10a979497969b7f47bcacc3a65b/" frameborder="0"></iframe>
+            </div>
+            <div class="scroll-indicator hidden">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="intro" class="intro-section">
+            <div class="container">
+                <div class="intro-grid">
+                    <div class="intro-content">
+                        <h2>Din Pålitelige Partner for Brukte Mobiltelefoner</h2>
+                        <p>Mobilhandel er din dedikerte partner for kjøp og salg av kvalitetssikrede brukte mobiltelefoner på Finn.no. Vi spesialiserer oss på å tilby et nøye utvalgt sortiment av mobiler som møter høye kvalitetsstandarder.</p>
+                        <div class="feature-list">
+                            <div class="feature-item"><div class="feature-icon">✓</div><span>Kvalitetssikret</span></div>
+                            <div class="feature-item"><div class="feature-icon">✓</div><span>Trygg handel</span></div>
+                            <div class="feature-item"><div class="feature-icon">✓</div><span>Rask levering</span></div>
+                            <div class="feature-item"><div class="feature-icon">✓</div><span>Kundeservice</span></div>
+                        </div>
+                        <a href="https://finn.no/user/profile" class="cta-button" target="_blank">Se vårt utvalg på Finn.no</a>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=800" alt="Mobiltelefoner i butikk">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="anmeldelser" class="reviews">
+            <div class="container">
+                <h2>Hva våre kunder sier</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p class="review-content">"Fantastisk kjøper, seriøs og trygg."</p>
+                        <p class="review-author">Trond C.</p>
+                        <p class="review-rating">10/10 ⭐</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-content">"Helt fantastisk! Hyggelig og kjapp! Anbefales på det sterkeste! Alt kom like hel frem også :D"</p>
+                        <p class="review-author">Ronja M.</p>
+                        <p class="review-rating">10/10 ⭐</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-content">"Tipp topp, akkurat som beskrevet! :)"</p>
+                        <p class="review-author">Christian S.</p>
+                        <p class="review-rating">10/10 ⭐</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="om-oss" class="about">
+            <div class="container">
+                <h2>Hvorfor velge oss?</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Vi er spesialister på kvalitetsbrukte mobiltelefoner og tilbyr:</p>
+                        <ul>
+                            <li>Nøye kvalitetskontroll av alle enheter</li>
+                            <li>Konkurransedyktige priser</li>
+                            <li>Rask og sikker levering</li>
+                            <li>Profesjonell kundeservice</li>
+                            <li>100% kundetilfredshet</li>
+                        </ul>
+                        <a href="https://finn.no/user/profile" class="cta-button" target="_blank">Besøk vår Finn.no butikk</a>
+                    </div>
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <span class="number">40+</span>
+                            <span class="label">Fornøyde kunder</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="number">50+</span>
+                            <span class="label">Solgte enheter</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="number">9.9/10</span>
+                            <span class="label">Kundetilfredshet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Mobilhandel</h4>
+                    <p>Din pålitelige partner for kvalitetsbrukte mobiltelefoner</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>E-post: kontakt@mobilhandel.no</p>
+                    <p>Org. nr: 834 959 852</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Finn oss</h4>
+                    <div class="social-links">
+                        <a href="https://finn.no/user/profile" target="_blank">Finn.no Profil</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mobilhandel. Alle rettigheter reservert.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
 </html>

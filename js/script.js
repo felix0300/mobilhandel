@@ -1,0 +1,71 @@
+// Smooth scrolling for navigation links and scroll indicator
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
+            const target = document.querySelector(targetId);
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+    });
+});
+
+// Show navbar and scroll indicator after Spline animation
+setTimeout(() => {
+    const navbar = document.querySelector('nav');
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    
+    navbar.classList.add('visible');
+    scrollIndicator.classList.add('visible');
+}, 3000);
+
+// Animate numbers when in view
+const trustItems = document.querySelectorAll('.trust-item .number');
+let animated = false;
+
+function animateNumbers() {
+    if (animated) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const target = entry.target;
+                const value = target.innerText;
+                let start = 0;
+                const duration = 2000;
+                const increment = parseInt(value) / (duration / 16);
+                
+                function updateNumber() {
+                    start += increment;
+                    if (start < parseInt(value)) {
+                        target.innerText = Math.floor(start);
+                        requestAnimationFrame(updateNumber);
+                    } else {
+                        target.innerText = value;
+                    }
+                }
+                
+                updateNumber();
+                animated = true;
+                observer.unobserve(target);
+            }
+        });
+    });
+
+    trustItems.forEach(item => observer.observe(item));
+}
+
+// Initialize animations when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+    animateNumbers();
+});
