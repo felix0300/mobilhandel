@@ -127,6 +127,13 @@ nav .container {
     background: linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%);
 }
 
+#heroVideo {
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+    object-fit: cover; /* Ensures video fills the space */
+    object-position: center center; /* Centers the video */
+}
+
 .spline-container {
     position: absolute;
     top: 0;
@@ -281,6 +288,7 @@ section {
     background: #333;
 }
 
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -328,9 +336,24 @@ h2 {
     margin-top: 0.5rem;
 }
 
-/* About Section */
+.review-disclaimer {
+    font-size: 12px; /* Gjør teksten relativt liten */
+    color: gray; /* Setter fargen til grå */
+    text-align: left; /* Juster etter behov */
+}
+
+.review-disclaimer  a {
+    color: gray; /* Setter linken til grå */
+    text-decoration: none; /* Fjerner understrekning */
+}
+
+.review-disclaimer a:hover {
+    text-decoration: underline; /* Legger til understrekning ved hover for tydelighet */
+}
+
+* About Section */
 .about {
-    background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+    background: linear-gradient(180deg, #f8faff 0%, #ffffff 100%);
 }
 
 .about-content {
@@ -338,18 +361,34 @@ h2 {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     margin-top: 3rem;
+    align-items: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 2rem 0;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #4a5568;
 }
 
 .about-text ul {
-    margin: 1rem 0;
+    margin: 0;
     padding-left: 1.5rem;
     list-style: none;
 }
 
 .about-text ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     position: relative;
     color: #4a5568;
+    font-size: 1.05rem;
 }
 
 .about-text ul li::before {
@@ -361,31 +400,40 @@ h2 {
 
 .trust-indicators {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
 }
 
 .trust-item {
     text-align: center;
     background: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    height: 12rem;
-    width:11rem;
+    transition: transform 0.3s ease;
 }
 
-.trust-item .number {
-    display: block;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: var(--accent);
+.trust-item:hover {
+    transform: translateY(-5px);
 }
 
-.trust-item .label {
-    margin-top: 0.5rem;
+.trust-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.trust-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.trust-item p {
     color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.4;
 }
+
 
 /* Footer */
 footer {

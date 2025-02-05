@@ -40,18 +40,19 @@ function animateNumbers() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const target = entry.target;
-                const value = target.innerText;
+                const value = parseFloat(target.innerText); // Henter måltallet
                 let start = 0;
                 const duration = 2000;
-                const increment = parseInt(value) / (duration / 16);
+                const frameRate = 16; // Ca. 60FPS
+                const increment = value / (duration / frameRate);
                 
                 function updateNumber() {
                     start += increment;
-                    if (start < parseInt(value)) {
-                        target.innerText = Math.floor(start);
+                    if (start < value) {
+                        target.innerText = (start.toFixed(1)) + "/10"; // Viser formatet nr/10
                         requestAnimationFrame(updateNumber);
                     } else {
-                        target.innerText = value;
+                        target.innerText = value.toFixed(1) + "/10"; // Sikrer riktig sluttverdi
                     }
                 }
                 
@@ -69,3 +70,5 @@ function animateNumbers() {
 document.addEventListener('DOMContentLoaded', () => {
     animateNumbers();
 });
+
+
