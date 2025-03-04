@@ -27,6 +27,12 @@ body {
     margin: 0 auto;
     padding: 0 20px;
 }
+@media (max-width: 768px) {
+    nav .container {
+      padding: 10px 15px;
+    }
+}
+
 
 /* Navigation */
 nav {
@@ -230,6 +236,13 @@ section {
     gap: 4rem;
     align-items: center;
 }
+@media (max-width: 768px) {
+    .intro-grid {
+      grid-template-columns: 1fr; /* bare én kolonne */
+      gap: 2rem;                  /* reduser gap */
+    }
+}
+
 
 .intro-image {
     border-radius: 20px;
