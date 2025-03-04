@@ -27,7 +27,7 @@ setTimeout(() => {
     
     navbar.classList.add('visible');
     scrollIndicator.classList.add('visible');
-}, 3000);
+}, 2000);
 
 // Animate numbers when in view
 const trustItems = document.querySelectorAll('.trust-item .number');
