@@ -236,12 +236,13 @@ section {
     gap: 4rem;
     align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .intro-grid {
-      grid-template-columns: 1fr; /* bare én kolonne */
-      gap: 2rem;                  /* reduser gap */
+      grid-template-columns: 1fr;
+      gap: 1.5rem; /* litt mindre gap på mobil */
     }
-}
+  }
+  
 
 
 .intro-image {
