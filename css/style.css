@@ -122,20 +122,30 @@ nav .container {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100vh; /* Holder helskjermhøyde på større skjermer */
     overflow: hidden;
-    background: linear-gradient(180deg, #ffffff 0%, #f0f4ff 100%);
 }
 
 #heroVideo {
     width: 100%;
-    height: 100vh; /* Adjust as needed */
-    object-fit: cover; /* Ensures video fills the space */
-    object-position: center center; /* Centers the video */
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
+
+/* På mobile enheter kan du justere */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;          /* La hero-seksjonen bli så høy som innholdet krever */
+        min-height: 70vh;      /* ...men gi den gjerne en minimumshøyde */
+    }
+    #heroVideo {
+        height: auto;         /* Unngå at videoen blir tvunget til nøyaktig 100vh */
+        min-height: 70vh;     /* Pass på at den fortsatt får litt høyde */
+    }
+}
+
 
 .spline-container {
     position: absolute;
