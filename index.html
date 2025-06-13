@@ -3,155 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mobilhandel</title>
-    <meta name="description" content="Mobilhandel tilbyr et stort utvalg av kvalitetssikrede brukte mobiltelefoner. Vi er din trygge partner for kjøp av mobiler på Finn.no">
+    <title>Mobilhandlen - Kjøp og salg av brukte mobiler</title>
+    <meta name="description" content="Trygg kjøp og salg av brukte mobiler. Profesjonell service på finn.no med topp kundevurderinger.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <a href="#" class="logo-link">
-                        <div class="logo-square">m</div>
-                        <span class="logo-text">mobilhandel</span>
-                    </a>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#intro">Om Oss</a></li>
-                    <li><a href="#anmeldelser">Anmeldelser</a></li>
-                    <li><a href="#om-oss">Hvorfor Oss</a></li>
-                    <li><a href="https://finn.no/user/profile" class="nav-cta" target="_blank">Besøk Butikken</a></li>
-                </ul>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">m</div>
+                <span class="logo-text">mobilhandlen</span>
             </div>
-        </nav>
-        
-        <div class="hero">
-            <div class="spline-container">
-                <!-- https://my.spline.design/agencyformdatepickeriphonemockup-ceb3f10a979497969b7f47bcacc3a65b/ -->
-                <video src="src/heroVideo.mp4" playsinline autoplay muted id="heroVideo"></video>
-            </div>
-            <div class="scroll-indicator hidden">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M12 5v14M19 12l-7 7-7-7"/>
-                </svg>
+            <ul class="nav-menu">
+                <li><a href="#hjem">Hjem</a></li>
+                <li><a href="#tjenester">Tjenester</a></li>
+                <li><a href="#anmeldelser">Anmeldelser</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="https://www.finn.no/user/profile" target="_blank" class="btn btn-shop">Besøk butikken</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-
-        <!-- <section id="intro" class="intro-section">
-            <div class="container">
-                <div class="intro-grid">
-                    <div class="intro-content">
-                        <h2>Din Pålitelige Partner for Brukte Mobiltelefoner</h2>
-                        <p>Mobilhandel er din dedikerte partner for kjøp og salg av kvalitetssikrede brukte mobiltelefoner på Finn.no. Vi spesialiserer oss på å tilby et nøye utvalgt sortiment av mobiler som møter høye kvalitetsstandarder.</p>
-                        <div class="feature-list">
-                            <div class="feature-item"><div class="feature-icon">✓</div><span>Kvalitetssikret</span></div>
-                            <div class="feature-item"><div class="feature-icon">✓</div><span>Trygg handel</span></div>
-                            <div class="feature-item"><div class="feature-icon">✓</div><span>Rask levering</span></div>
-                            <div class="feature-item"><div class="feature-icon">✓</div><span>Kundeservice</span></div>
-                        </div>
-                        <a href="https://finn.no/user/profile" class="cta-button" target="_blank">Se vårt utvalg på Finn.no</a>
+    <!-- Hero Section -->
+    <section id="hjem" class="hero">
+        <div class="hero-background">
+            <img src="src/heroImage.jpg" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-background">
+                    <h1>Trygg kjøp og salg av brukte mobiler</h1>
+                    <p class="hero-subtitle">Vi er din pålitelige partner for mobilhandel på finn.no. Med høyeste kundevurderinger og profesjonell service.</p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10/10</div>
+                        <div class="stat-label">Kundevurdering</div>
                     </div>
-                    <div class="intro-image">
-                        <img src="https://images.unsplash.com/photo-1616348436168-de43ad0db179?auto=format&fit=crop&q=80&w=800" alt="Mobiltelefoner i butikk">
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Trygg handel</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Fornøyde kunder</div>
                     </div>
                 </div>
-            </div>
-        </section> -->
-        <section id="anmeldelser" class="reviews">
-            <div class="container">
-                <h2>Hva våre kunder sier</h2>
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <p class="review-content">"Fantastisk kjøper, seriøs og trygg."</p>
-                        <p class="review-author">Trond C.</p>
-                        <p class="review-rating">10/10 ⭐</p>
-                    </div>
-                    <div class="review-card">
-                        <p class="review-content">"Helt fantastisk! Hyggelig og kjapp! Anbefales på det sterkeste! Alt kom like hel frem også :D"</p>
-                        <p class="review-author">Ronja M.</p>
-                        <p class="review-rating">10/10 ⭐</p>
-                    </div>
-                    <div class="review-card">
-                        <p class="review-content">"Tipp topp, akkurat som beskrevet! :)"</p>
-                        <p class="review-author">Christian S.</p>
-                        <p class="review-rating">10/10 ⭐</p>
-                    </div>
-                    <p class="review-disclaimer">*Anmeldelser hentet fra <a href="https://www.finn.no/profile/reviews?userId=863791344" target="_blank">finn.no</a></p>
-
+                <div class="hero-buttons">
+                    <a href="https://www.finn.no/profile/reviews?userId=863791344" target="_blank" class="btn btn-secondary">Se våre anmeldelser</a>
+                    <a href="#tjenester" class="btn btn-primary">Våre tjenester</a>
                 </div>
             </div>
-        </section>
-        <section id="om-oss" class="about">
-            <div class="container">
-                <h2>Hvorfor velge oss?</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Vi er spesialister på kvalitetsbrukte mobiltelefoner og tilbyr:</p>
-                        <ul>
-                            <li>Nøye kvalitetskontroll av alle enheter</li>
-                            <li>Konkurransedyktige priser</li>
-                            <li>Rask og sikker levering</li>
-                            <li>Profesjonell kundeservice</li>
-                            <li>100% kundetilfredshet</li>
-                        </ul>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="tjenester" class="services">
+        <div class="container">
+            <h2>Våre tjenester</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Kjøp av mobiler</h3>
+                    <p>Vi kjøper din brukte mobil til rettferdig pris. Rask vurdering og trygg betaling.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Salg av mobiler</h3>
+                    <p>Kvalitetssikrede brukte mobiler til gode priser. Alle mobiler er testet og i god stand.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Trygg handel</h3>
+                    <p>Sikker betaling og levering. Vi står bak alle våre produkter med garanti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="anmeldelser" class="testimonials">
+        <div class="container">
+            <h2>Hva våre kunder sier</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Fantastisk kjøper, seriøs og trygg."</p>
                     </div>
-                    <div class="trust-indicators">
-                        <div class="trust-item">
-                            <div class="trust-icon">🔍</div>
-                            <h3>Grundig Testing</h3>
-                            <p>Hver mobil gjennomgår en omfattende kvalitetssjekk</p>
-                        </div>
-                        <div class="trust-item">
-                            <div class="trust-icon">⚡</div>
-                            
-                            <h3>Rask Respons</h3>
-                            <p>Svarer på henvendelser innen 24 timer</p>
-                        </div>
-                        <div class="trust-item">
-                            <div class="trust-icon">🛡️</div>
-                            <h3>Trygg Handel</h3>
-                            <p>Sikker betaling og forsendelse</p>
-                        </div>
-                        <div class="trust-item">
-                            <div class="trust-icon">💎</div>
-                            <h3>Kvalitet</h3>
-                            <p>Alle enheter er grundig testet og verifisert</p>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Trond C.</div>
+                            <div class="rating">10/10 ⭐</div>
                         </div>
                     </div>
                 </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Helt fantastisk! Hyggelig og kjapp! Anbefales på det sterkeste! Alt kom like hel frem også :D"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Ronja M.</div>
+                            <div class="rating">10/10 ⭐</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Tipp topp, akkurat som beskrevet! :)"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Christian S.</div>
+                            <div class="rating">10/10 ⭐</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+            <p class="testimonials-footnote">*Anmeldelser hentet fra <a href="https://www.finn.no/profile/reviews?userId=863791344" target="_blank">finn.no</a></p>
+        </div>
+    </section>
 
-    <footer>
+    <!-- Trust Section -->
+    <section class="trust">
+        <div class="container">
+            <h2>Hvorfor velge Mobilhandlen?</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">✓</div>
+                    <h3>Verifisert selger</h3>
+                    <p>Registrert og verifisert bruker på finn.no med dokumentert handelshistorikk</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⚡</div>
+                    <h3>Rask service</h3>
+                    <p>Kjapp respons og effektiv behandling av alle henvendelser</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🔒</div>
+                    <h3>Sikker betaling</h3>
+                    <p>Trygg betaling gjennom etablerte betalingsløsninger</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">📞</div>
+                    <h3>Personlig service</h3>
+                    <p>Direkte kontakt og personlig oppfølging av alle kunder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2>Kontakt oss</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ta kontakt i dag</h3>
+                    <p>Vi er alltid klare til å hjelpe deg med kjøp eller salg av mobiler. Kontakt oss for en uforpliktende samtale.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">🌐</div>
+                            <div>
+                                <h4>finn.no profil</h4>
+                                <a href="https://www.finn.no/profile/reviews?userId=863791344" target="_blank">Besøk vår profil og send melding</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Mobilhandel</h4>
-                    <p>Din pålitelige partner for kvalitetsbrukte mobiltelefoner</p>
+                <div class="footer-logo">
+                    <div class="logo-icon">m</div>
+                    <span class="logo-text">mobilhandlen</span>
                 </div>
-                <div class="footer-section">
-                    <h4>Kontakt</h4>
-                    <p>E-post: mobilforhandleren@gmail.com</p>
-                    <p>Org. nr: 834 959 852</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Finn oss</h4>
-                    <div class="social-links">
-                        <a href="https://finn.no/user/profile" target="_blank">Finn.no Profil</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Mobilhandel. Alle rettigheter reservert.</p>
+                <p>&copy; 2025 Mobilhandlen. Trygg mobilhandel på finn.no.</p>
+                <p class="org-number">Org.nr: 834 959 852</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
